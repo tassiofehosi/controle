@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: 13-Jul-2015 às 04:39
+-- Generation Time: 17-Jul-2015 às 16:12
 -- Versão do servidor: 5.6.21
 -- PHP Version: 5.5.19
 
@@ -43,6 +43,15 @@ CREATE TABLE IF NOT EXISTS `login` (
   `usuario` varchar(50) COLLATE utf8_bin NOT NULL,
   `senha` varchar(50) COLLATE utf8_bin NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+--
+-- Extraindo dados da tabela `login`
+--
+
+INSERT INTO `login` (`usuario`, `senha`) VALUES
+('tassio', '123456'),
+('lercio', '123456'),
+('mac', '123456');
 
 -- --------------------------------------------------------
 
