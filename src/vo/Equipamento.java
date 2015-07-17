@@ -1,4 +1,5 @@
-package Vo;
+package vo;
+
 
 public class Equipamento {
 

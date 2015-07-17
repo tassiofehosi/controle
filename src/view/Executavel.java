@@ -1,10 +1,12 @@
-package Vo;
+package view;
 
 import java.util.Scanner;
 
 import javax.swing.JOptionPane;
 
-public class _Executavel {
+import vo.Servico;
+
+public class Executavel {
 
 	public static void main(String[] args) {
 
