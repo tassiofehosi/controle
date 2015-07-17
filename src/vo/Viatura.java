@@ -1,15 +1,25 @@
-package vo;
-
-
+package Vo;
 
 public abstract class Viatura {
     
-    public String prefixoVtr;
-    public RadioTransceptor radio;
+    private String prefixoVtr;
+    private RadioTransceptor radio;
 
     public Viatura(String prefixoVtr, RadioTransceptor radio) {
+    	
         this.prefixoVtr = prefixoVtr;
         this.radio = radio;
     }
-     
+    
+    public String getPrefixoVtr() {
+    	
+    	return this.prefixoVtr;
+    }
+    
+    public String exibeRadios() {
+    	
+    	return radio.toString();
+    }
+    
+    public abstract String dataDoServico();
 }

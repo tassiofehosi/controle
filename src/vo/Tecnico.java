@@ -1,16 +1,34 @@
-package vo;
+package Vo;
 
-
-public class Tecnico {
+public class Tecnico extends Funcionario {
     
-    public String nomeT;
-    public String graduacaoT;
-    public int matricula;
-
-    public Tecnico(String nomeT, String graduacaoT, int matricula) {
-        this.nomeT = nomeT;
-        this.graduacaoT = graduacaoT;
-        this.matricula = matricula;
+	public Tecnico(String nome, String graduacao, int matricula) {
+		
+		super(nome, graduacao, matricula);
     }
-    
+	
+	public String retornaNome() {
+		
+		return getNome();
+	}
+	
+	public void modificaNome(String nome) {
+		
+		setNome(nome);
+	}
+	
+	public String retornaGraduacao() {
+		
+		return getGraduacao();
+	}
+	
+	public void modificaGraduacao(String graduacao) {
+		
+		setGraduacao(graduacao);
+	}
+	
+	public int retornaMatricula() {
+		
+		return getMatricula();
+	}
 }
